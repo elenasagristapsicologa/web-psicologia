@@ -399,7 +399,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
         </h2>
 
         <div class="overflow-hidden rounded-2xl border border-light-outline-variant mb-5 aspect-[3/4]">
-          <img src="https://lh3.googleusercontent.com/aida/ALJJyrAD1r7Uo8YiZwS9G-iJ2yI84-8PdKFEPRbWVqyYNAPe3l0jayA-4CpVG9myx2G7w3JzeU1v56UKz_GtEnCpTJ_A7kpgAO5avqlGpBQUhyPVYaTAGTdXlqtVJY5tpst35rseh_ztffgaGbsFQ-ChfYgxSGlfRzAOKvV1keBDTAylZK4zBqnwGX7QXelt2j-HP3aENN6kfRCvzAOya6hm4L9pn4SopY_7WhlgMq2f1dwJNjYNMKFnjEZ2VA4" alt class="w-full h-full object-cover object-top">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrDpxrqFhtQMLJMiZw15OdFfdhhGPCwNnvm5ZZ9gG7xazY1E9o0AzwRCI_0ThTVcW042DvLJqGTnnY_xLZnmpX4sxXJME0zA1xxMxQrTxoyPKZwzas3f_T_DeMQfhvvqyaRM9pvVogg-X_opewr3-RFvMKnHY364T0OxO1TdwxWZE0XDsodBZCpqvltt17w5v6mTjfMy_xr7mCQ8YdKJmiZ0XqUVlxPSnv9w-OBj2QCSVg26UibbEFcEgck" alt class="w-full h-full object-cover object-top">
         </div>
 
         <div class="space-y-3 font-body text-body-md text-light-on-surface/90 leading-relaxed mb-6">
@@ -692,6 +692,17 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
     }
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') closeLegalModal();
+    });
+    document.querySelectorAll('img[data-stitch-original-src]').forEach(function (img) {
+      function restore() {
+        var orig = img.getAttribute('data-stitch-original-src') || '';
+        var path = orig.indexOf('===') !== -1 ? orig.split('===')[1] : orig;
+        if (path && img.getAttribute('src') !== path) {
+          img.setAttribute('src', path);
+        }
+      }
+      if (img.complete && img.naturalWidth === 0) restore();
+      else img.addEventListener('error', restore);
     });
   </script>
 
