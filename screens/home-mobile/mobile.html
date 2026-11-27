@@ -124,11 +124,12 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
   </style>
 </head>
 <body class="bg-light-background text-light-on-surface font-body antialiased selection:bg-brand-beige selection:text-light-primary">
-  <div class="min-h-[884px] flex flex-col w-full max-w-[390px] mx-auto overflow-x-hidden border-x border-light-outline-variant/30" data-stitch-vh="min-h-[884px]===min-h-screen">
+  <div class="min-h-[884px] flex flex-col w-full overflow-x-hidden" data-stitch-vh="min-h-[884px]===min-h-screen">
 
     <!-- BARRA SUPERIOR EDITORIAL MÓVIL -->
     <div class="bg-light-surface-container border-b border-light-outline-variant/60 py-2 px-4 text-center font-label text-[11px] text-light-on-surface-variant leading-snug">
       <span>Psicoterapia online individual a adolescentes (+16 años) y adultos. Agenda abierta para nuevos acompañamientos.</span>
+      <span class="font-mono text-[10px] text-light-outline ml-1 whitespace-nowrap">Col. Nº 31.704</span>
     </div>
 
     <!-- HEADER MÓVIL STICKY CON IDENTIDAD ORIGINAL -->
@@ -139,8 +140,8 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
           <span class="font-headline text-headline-sm text-light-primary tracking-tight font-medium leading-tight">
             Elena Sagristá
           </span>
-          <span class="font-label text-label-sm uppercase tracking-widest text-light-outline">
-            Psicoterapia Online
+          <span class="font-label text-[10px] uppercase tracking-wider text-light-outline">
+            Psicoterapia Online Integradora
           </span>
         </div>
       </a>
@@ -178,7 +179,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
         <!-- Fotografía real de Elena con matrioskas -->
         <div class="my-5 relative">
           <div class="overflow-hidden rounded-2xl bg-light-surface shadow-md border border-light-outline-variant/60 aspect-[3/4]">
-            <img src="https://lh3.googleusercontent.com/aida/ALJJyrDIyESvgb2O4GB9PdlUdLL124k2r-nOg8YHijWwHrJwBxtcx-YjEeLmCBoEjXQOZAU0pK7BWNFcbjK62RBkSXZW0MI75wrO-B3j_OA-arrhj3BXlfA14T97jqkaDxH7yz6S1X5BoEwhCHyAo02yqDZqlOv3E9bJTIADCefi84mEeI-ScSBJy0NlPu878wiStR3pK1Mt3jrSBTntuc32LGiX4fJ_CHmtat48fqFA4NxfjUHxWZTtmDvB8Ts" data-local-src="../../uploads/acompanamiento-06128f.jpg" alt="Elena Sagristá con sus matrioskas en consulta" class="w-full h-full object-cover object-top">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrCoPiBDrI2Wor-ooPTNNBy5B0_afdHAUnhA-uaBaaloK_KcPdDIHOVTbil2OVWkkrkveb1vMEQRmH4XAJXJSYl7mD_B_ACFZ2uiB0AVeF2yXx2AsZoiUYELSOj-tD2XhSM-0_BKB4u_xaPtNvxOoMTOsyPfd-6mTGs2xx33A5iMxqSvSdNCradd380c0r8bn0uU2qpKkRvVCgH6ifBBKTH7Re_CDTJl5Qlv4iksoEft31Rh_OM5s8rWWsU" data-local-src="../../uploads/acompanamiento-06128f.jpg" alt="Elena Sagristá con sus matrioskas en consulta" class="w-full h-full object-cover object-top">
           </div>
         </div>
 
@@ -186,8 +187,8 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
           <p>
             Soy Elena Sagristá. Acompaño a personas que atraviesan duelos, pérdidas o experiencias dolorosas que siguen teniendo un gran impacto en la actualidad.
           </p>
-          <p class="font-medium text-light-primary">
-            No tienes que sostenerlo en soledad.
+          <p class="text-light-on-surface-variant">
+            Sé que estas vivencias pueden remover emociones difíciles y traer de vuelta patrones antiguos que generan mucho malestar. <strong class="text-light-primary">No tienes que sostenerlo en soledad.</strong>
           </p>
         </div>
 
@@ -203,16 +204,24 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
       <!-- 2. MANIFIESTO: MÁS ALLÁ DEL SÍNTOMA MÓVIL -->
       <section class="px-5 py-12 bg-light-surface-container-high/40 border-y border-light-outline-variant/50">
         
-        <h2 class="font-display text-display-md-mobile text-light-primary mb-4 leading-tight">
-          Más allá del síntoma: comprender tu historia, tu contexto y el sentido de lo que estás viviendo.
+        <h2 class="font-display text-display-md-mobile text-light-primary mb-2 leading-tight">
+          Más allá del síntoma
         </h2>
-        <div class="space-y-3 font-body text-body-md text-light-on-surface-variant leading-relaxed">
+        <p class="font-body text-body-sm text-light-on-surface-variant leading-relaxed mb-5">
+          Comprender tu historia, tu contexto y el sentido de lo que estás viviendo.
+        </p>
+        <div class="space-y-4 font-body text-body-md text-light-on-surface-variant leading-relaxed">
           <p class="font-display italic text-headline-sm text-light-primary leading-snug">
             «Tal vez sientes que algo dentro de ti se desordena en momentos de ruptura, pérdidas o incertidumbre. Y aunque intentas continuar con tu día a día, hay heridas que todavía necesitan ser miradas.»
           </p>
           <p>
-            Es posible que muchas de las respuestas que generan sufrimiento en la actualidad nacieran como formas de protección en el pasado. Comprender su origen nos permite dejar de luchar contra ellas para acompañar estas heridas con más compasión.
+            Es posible que muchas de las respuestas que generan sufrimiento en la actualidad nacieran como formas de protección en el pasado. Comprender el origen y la función de estas respuestas nos permite dejar de luchar contra ellas para <strong>acompañar estas heridas con más compasión</strong>, ampliar el nivel de consciencia y construir un presente de mayor bienestar.
           </p>
+          <div class="p-4 bg-light-background rounded-2xl border border-light-outline-variant/80">
+            <p class="font-medium text-light-primary font-headline text-title-md leading-snug">
+              En este espacio podrás acercarte a lo que duele y reconocer esas necesidades que, quizás durante mucho tiempo, han quedado en segundo plano.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -231,8 +240,8 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
 
         <div class="space-y-3">
 
-          <!-- Duelos y pérdidas (abierta por defecto) -->
-          <details open class="group bg-brand-beige/35 rounded-2xl border border-light-outline-variant overflow-hidden">
+          <!-- Duelos y pérdidas -->
+          <details class="group bg-brand-beige/35 rounded-2xl border border-light-outline-variant overflow-hidden">
             <summary class="flex items-center justify-between gap-3 p-5 cursor-pointer list-none [&amp;::-webkit-details-marker]:hidden">
               <div class="flex items-center gap-3 min-w-0">
                 <span class="material-symbols-outlined text-title-md text-light-secondary shrink-0">favorite</span>
@@ -272,7 +281,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
             </summary>
             <div class="px-5 pb-5 pt-0">
               <p class="font-body text-body-sm text-light-on-surface-variant leading-relaxed">
-                Existen vivencias dolorosas del pasado que continúan resonando en el presente. El enfoque terapéutico se basará en procesar esas heridas, comprender cómo te vinculas y construir una base de seguridad interna real.
+                Existen vivencias dolorosas del pasado que continúan resonando en el presente y condicionando el día a día. Esto a veces se manifiesta como sensación de alerta constante, dificultad para sentirse a salvo, inseguridad en las relaciones o la repetición de dinámicas y roles familiares que ya no te representan. El enfoque terapéutico se basará en procesar esas heridas, comprender cómo te vinculas y construir una base de seguridad interna real.
               </p>
             </div>
           </details>
@@ -287,7 +296,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
             </summary>
             <div class="px-5 pb-5 pt-0">
               <p class="font-body text-body-sm text-light-on-surface-variant leading-relaxed">
-                Patrones de complacencia, miedo al rechazo o al abandono, dificultad para poner límites y relaciones que generan desgaste. Exploramos la forma de vincular para construir límites sanos.
+                A veces, bajo el sufrimiento, puede haber patrones de complacencia, miedo al rechazo o al abandono, dificultad para poner límites y relaciones que generan desgaste. Exploramos la forma de vincular para construir límites sanos y relaciones más conscientes.
               </p>
             </div>
           </details>
@@ -302,7 +311,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
             </summary>
             <div class="px-5 pb-5 pt-0">
               <p class="font-body text-body-sm text-light-on-surface-variant leading-relaxed">
-                Abordaje de la exigencia interna rígida, falta de confianza constante o sensación de no ser suficiente. Transformamos la voz crítica en autocompasión.
+                Abordaje de la exigencia interna rígida, falta de confianza constante o sensación de no ser suficiente. Exploramos con cuidado el origen de esa voz crítica para transformar el diálogo interno y cultivar la autocompasión.
               </p>
             </div>
           </details>
@@ -317,7 +326,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
             </summary>
             <div class="px-5 pb-5 pt-0">
               <p class="font-body text-body-sm text-light-on-surface/90 leading-relaxed">
-                A través de la escucha corporal, abordamos la regulación de forma integral: en lo emocional, cognitivo, corporal, relacional y sensorial.
+                A través de la escucha corporal y de la comprensión de los orígenes del malestar, abordamos la regulación de forma integral: en lo emocional, cognitivo, corporal, relacional y sensorial. Un proceso para comprender las alertas de tu cuerpo, dejar atrás la tensión constante y recuperar la calma en tu día a día.
               </p>
             </div>
           </details>
@@ -383,7 +392,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
             <span class="whitespace-nowrap">Terapia individual:</span> <span class="whitespace-nowrap">60 € | 50‑60 min</span>
           </h2>
           <p class="font-body text-body-sm text-light-on-surface/90">
-            Frecuencia semanal/quincenal al inicio, valorada según tus necesidades.
+            La frecuencia será semanal/quincenal al inicio y posteriormente se valorará en función de necesidades.
           </p>
           <a href="#contacto" class="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-light-primary text-light-on-primary font-label text-label-md text-center mt-2 shadow-sm">
             <span>Contacta conmigo</span>
@@ -399,37 +408,46 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
         </h2>
 
         <div class="overflow-hidden rounded-2xl border border-light-outline-variant mb-5 aspect-[3/4]">
-          <img src="https://lh3.googleusercontent.com/aida/ALJJyrDpxrqFhtQMLJMiZw15OdFfdhhGPCwNnvm5ZZ9gG7xazY1E9o0AzwRCI_0ThTVcW042DvLJqGTnnY_xLZnmpX4sxXJME0zA1xxMxQrTxoyPKZwzas3f_T_DeMQfhvvqyaRM9pvVogg-X_opewr3-RFvMKnHY364T0OxO1TdwxWZE0XDsodBZCpqvltt17w5v6mTjfMy_xr7mCQ8YdKJmiZ0XqUVlxPSnv9w-OBj2QCSVg26UibbEFcEgck" data-local-src="../../uploads/sobre_mi-bf6261.jpg" alt class="w-full h-full object-cover object-top">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrBLsp6ohUu9uVirp3CBz3Uxz2zj6G0Zu1ZwnXB-3REIFaoXqE6sI0_d-vdSloGdBrNJv4yjlQQYAgul6eHPdV8fochkA4tVjsJQM1o_dte0ErpZMeJ0XcN-znYxgxuVMzhSyfRM_tQkrfk6IRiI8r9Xzp5MRUvFHRdc4aaKhRWh9uOYMerkTcr2ZP4iTMceoKv8rxs8NtOVmW12LJWmlDK8vqeXBJa5sw2u1cV1NjEiO4Sx_RaYWcxfBNI" data-local-src="../../uploads/sobre_mi-bf6261.jpg" alt class="w-full h-full object-cover object-top">
         </div>
 
-        <div class="space-y-3 font-body text-body-md text-light-on-surface/90 leading-relaxed mb-6">
+        <div class="space-y-4 font-body text-body-md text-light-on-surface/90 leading-relaxed mb-6">
           <p>
             Desde siempre me ha interesado lo que ocurre en el mapa interno de cada persona: lo que sentimos, lo que arrastramos en el cuerpo y lo que a menudo duele en silencio.
           </p>
           <p>
-            Empecé estudiando Psicología en la Universidad de Sevilla y más adelante me especialicé en Intervención Psicosocial en la Universitat de Barcelona. Realicé el Máster en Psicología General Sanitaria y me formé en Enfoque Sistémico, trauma y apego.
+            Empecé estudiando Psicología en la Universidad de Sevilla y, más adelante, me especialicé en Intervención Psicosocial en la Universitat de Barcelona. Mis primeros pasos profesionales transcurrieron en entornos de vulnerabilidad, acompañando fundamentalmente a menores y familias. Fue una etapa de aprendizaje profundo que me enseñó a mirar con compasión y respeto a quien convive con sufrimiento.
+          </p>
+          <p>
+            Mientras tanto, la psicoterapia estaba presente como un hilo constante. Por ello, decidí realizar el Máster en Psicología General Sanitaria y me formé en Enfoque Sistémico y Terapia Familiar. Para ofrecer un sostén aún más profundo a la historia de cada persona, especialicé mi mirada en el abordaje del trauma, modelos de apego y heridas relacionales, enfatizando en cómo los primeros vínculos moldean la forma en la que nos relacionamos.
+          </p>
+          <p>
+            Asimismo, me he especializado en el acompañamiento en procesos de duelo y pérdidas, una vivencia que también me ha atravesado profundamente en lo personal.
           </p>
           <p class="font-display italic text-light-primary text-title-md border-l-2 border-light-secondary pl-3">
-            «Para mí, acompañar a otras personas en este camino es una forma de honrar sus historias.»
+            «Para mí, acompañar a otras personas en este camino es una forma de honrar sus historias y de ofrecer la oportunidad de reparar lo que una vez se dañó.»
           </p>
         </div>
 
         <button type="button" onclick="openLegalModal(&#39;trayectoria&#39;)" class="font-label text-label-sm text-light-primary underline block text-left">
-          → Trayectoria académica y profesional completa
+          *Puedes consultar mi trayectoria académica y profesional completa aquí
         </button>
       </section>
 
       <!-- 7. ENFOQUE Y MATRIOSKAS MÓVIL -->
       <section id="enfoque" class="px-5 py-12 bg-light-surface border-y border-light-outline-variant/50">
 
-        <h2 data-design-text-token="display-md-mobile" class="font-display text-display-md-mobile text-light-primary mb-4">
+        <h2 data-design-text-token="display-md-mobile" class="font-display text-display-md-mobile text-light-primary mb-3">
           Conoce mi enfoque
         </h2>
+        <p class="text-light-outline font-body text-body-sm leading-relaxed border-l border-light-outline-variant/80 pl-3 mb-6">
+          Una mirada que no etiqueta ni reduce: comprende el origen de tus respuestas emocionales y acoge cada una de tus partes internas.
+        </p>
 
         <!-- Fotografía y metáfora de las matrioskas -->
         <div class="p-5 bg-light-background rounded-2xl border border-light-outline-variant space-y-3 mb-6">
           <div class="overflow-hidden rounded-xl border border-light-outline-variant aspect-[4/3]">
-            <img src="https://lh3.googleusercontent.com/aida/ALJJyrBKKAjLF8Wj1vElv_TuXfeCi870N7Mf1PJKPiAT7AlH3HoiHOzYBMaP1JHYhA5acwPqO4x0sqVwv4FddNP8m_kZgcvDNAZszaIbhufnpwjxHCZvqMn_GtR3_rEZVAwMc4egFv6veCEVaLQPxZqDw7YmMupmWK2I9Rs26phW8MBOg197YNdIutyxtm1jOhGjeiGEtkf2sFqUvo8RtaaTUdnBu47pi06rNMisXkaRURnciEc95l1gP5hcNQ" data-local-src="../../uploads/conoce_mi_enfoque-990049.jpg" alt class="w-full h-full object-cover">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrCM2PUyKj0RJTUnnNyM2m-tWJX06jWj18ixQwAejU8Ojr35ABjkrsPgnQlNFM-Jhp0FHlzyJHBkSuYX9EKSvocIPKrOipbl7YMmLYaxxrDdueIGLOy_k894-R72eLqJTHxZHdielteSvEWoLvrGSdkyyHgT_UoUJmHRRi2tyLIK3Iq24lgTtOVbIw-EyUat1w5QXRLrT81DOwh6vzvGFJRIKn5UM23LC7y8KmgYlM_juWIMj4fqrWZrdg" data-local-src="../../uploads/conoce_mi_enfoque-990049.jpg" alt class="w-full h-full object-cover">
           </div>
           <h3 class="font-display text-title-lg text-light-primary leading-snug">
             Todas tus partes tienen un sentido
@@ -445,55 +463,114 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
         </div>
 
         <div class="space-y-4">
-          <div class="p-5 bg-light-surface-container-low rounded-2xl border border-light-outline-variant">
-            <h4 class="font-display text-title-md text-light-primary mb-1">Trauma y Teoría del Apego</h4>
-            <p class="font-body text-body-sm text-light-on-surface-variant">Terapia sensible al trauma para atender <em class="italic">experiencias inconclusas del pasado</em> y comprender <em class="italic">cómo te vinculas</em>.</p>
-          </div>
+          <details class="group bg-light-surface-container-low rounded-2xl border border-light-outline-variant overflow-hidden">
+            <summary class="flex items-center justify-between gap-3 p-5 cursor-pointer list-none [&amp;::-webkit-details-marker]:hidden">
+              <h4 class="font-display text-title-md text-light-primary leading-snug">Trauma y Teoría del Apego</h4>
+              <span class="material-symbols-outlined text-title-md text-light-primary shrink-0 transition-transform duration-200 group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-5 pb-5 pt-0 space-y-3 font-body text-body-sm text-light-on-surface-variant leading-relaxed">
+              <p>La terapia sensible al trauma se centra en las <em class="italic">experiencias dolorosas del pasado</em> que no tuvieron el sostén o los recursos necesarios para procesarse entonces, dejando una vivencia inconclusa que hoy en día se manifiesta en forma de malestar o síntomas.</p>
+              <p>La Teoría del Apego es un marco fundamental para comprender cómo nos vinculamos, regulamos nuestras emociones y construimos la <em class="italic">sensación de seguridad</em> en nuestras relaciones a lo largo de la vida.</p>
+            </div>
+          </details>
 
-          <div class="p-5 bg-light-surface-container-low rounded-2xl border border-light-outline-variant">
-            <h4 class="font-display text-title-md text-light-primary mb-1">Modelo Relacional de Duelos</h4>
-            <p class="font-body text-body-sm text-light-on-surface-variant">Abordaje <em class="italic">multidimensional de la pérdida</em> integrando apego, cuerpo y <em class="italic">partes internas</em>.</p>
-          </div>
+          <details class="group bg-light-surface-container-low rounded-2xl border border-light-outline-variant overflow-hidden">
+            <summary class="flex items-center justify-between gap-3 p-5 cursor-pointer list-none [&amp;::-webkit-details-marker]:hidden">
+              <h4 class="font-display text-title-md text-light-primary leading-snug">Modelo Relacional de Duelos y Pérdidas</h4>
+              <span class="material-symbols-outlined text-title-md text-light-primary shrink-0 transition-transform duration-200 group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-5 pb-5 pt-0 space-y-3 font-body text-body-sm text-light-on-surface-variant leading-relaxed">
+              <p>Se trata de un enfoque multidimensional sobre el duelo que parte de la <em class="italic">singularidad de cada vivencia</em> de la pérdida, teniendo en cuenta los aspectos emocionales, físicos, sociales, culturales y espirituales de cada persona.</p>
+              <p>Además, este modelo integra aspectos relacionados con el trauma, el apego y el <em class="italic">trabajo de partes</em>.</p>
+            </div>
+          </details>
 
-          <div class="p-5 bg-light-surface-container-low rounded-2xl border border-light-outline-variant">
-            <h4 class="font-display text-title-md text-light-primary mb-1">Perspectiva sistémica</h4>
-            <p class="font-body text-body-sm text-light-on-surface-variant">Intervención en los <em class="italic">sistemas familiares y relacionales</em> para entender el origen de los conflictos.</p>
-          </div>
+          <details class="group bg-light-surface-container-low rounded-2xl border border-light-outline-variant overflow-hidden">
+            <summary class="flex items-center justify-between gap-3 p-5 cursor-pointer list-none [&amp;::-webkit-details-marker]:hidden">
+              <h4 class="font-display text-title-md text-light-primary leading-snug">Perspectiva sistémica</h4>
+              <span class="material-symbols-outlined text-title-md text-light-primary shrink-0 transition-transform duration-200 group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-5 pb-5 pt-0 space-y-3 font-body text-body-sm text-light-on-surface-variant leading-relaxed">
+              <p>La terapia sistémica es un tipo de intervención que estudia los <em class="italic">sistemas familiares</em> y sus subsistemas (pareja, individuo, hijos) y otros grupos sociales significativos para determinar el origen de los conflictos y buscar cambios en las <em class="italic">dinámicas de estas relaciones</em> capaces de lograr una solución.</p>
+            </div>
+          </details>
 
-          <div class="p-5 bg-light-surface-container-low rounded-2xl border border-light-outline-variant">
-            <h4 class="font-display text-title-md text-light-primary mb-1">Sistema de la Familia Interna (IFS)</h4>
-            <p class="font-body text-body-sm text-light-on-surface-variant">Escuchar cada una de tus <em class="italic">partes internas sin juicio</em> para construir una vida más plena.</p>
-          </div>
+          <details class="group bg-light-surface-container-low rounded-2xl border border-light-outline-variant overflow-hidden">
+            <summary class="flex items-center justify-between gap-3 p-5 cursor-pointer list-none [&amp;::-webkit-details-marker]:hidden">
+              <h4 class="font-display text-title-md text-light-primary leading-snug">Sistema de la Familia Interna (IFS)</h4>
+              <span class="material-symbols-outlined text-title-md text-light-primary shrink-0 transition-transform duration-200 group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-5 pb-5 pt-0 space-y-3 font-body text-body-sm text-light-on-surface-variant leading-relaxed">
+              <p>Según este enfoque, estamos formados por diferentes <em class="italic">partes internas</em>, las cuales corresponden a nuestros pensamientos, emociones y reacciones.</p>
+              <p>Cada una de estas partes tiene algo que decirnos y todas son necesarias, por eso es importante que <em class="italic">las escuchemos, sin juzgarlas</em>. En el proceso, buscaremos soluciones que ayuden a poder disfrutar de una vida más plena y coherente.</p>
+            </div>
+          </details>
 
-          <div class="p-5 bg-light-surface-container-low rounded-2xl border border-light-outline-variant">
-            <h4 class="font-display text-title-md text-light-primary mb-1">Enfoque psicosomático</h4>
-            <p class="font-body text-body-sm text-light-on-surface-variant"><em class="italic">Conexión profunda entre cuerpo y mente</em> para procesar dificultades emocionales.</p>
-          </div>
+          <details class="group bg-light-surface-container-low rounded-2xl border border-light-outline-variant overflow-hidden">
+            <summary class="flex items-center justify-between gap-3 p-5 cursor-pointer list-none [&amp;::-webkit-details-marker]:hidden">
+              <h4 class="font-display text-title-md text-light-primary leading-snug">Enfoque psicosomático</h4>
+              <span class="material-symbols-outlined text-title-md text-light-primary shrink-0 transition-transform duration-200 group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-5 pb-5 pt-0 space-y-3 font-body text-body-sm text-light-on-surface-variant leading-relaxed">
+              <p>Este enfoque integra la <em class="italic">conexión entre el cuerpo y la mente</em> para procesar experiencias traumáticas y otras dificultades emocionales.</p>
+            </div>
+          </details>
         </div>
 
       </section>
 
-      <!-- 8. TESTIMONIOS MÓVIL -->
+      <!-- 8. TESTIMONIOS MÓVIL (CARRUSEL) -->
       <section id="testimonios" class="px-5 py-12 bg-light-background">
         
-        <h2 data-design-text-token="headline-lg-mobile" class="font-display text-headline-lg-mobile text-light-primary mb-6">
-          Testimonios
-        </h2>
+        <div class="flex items-center justify-between gap-4 mb-6">
+          <h2 data-design-text-token="headline-lg-mobile" class="font-display text-headline-lg-mobile text-light-primary">
+            Testimonios
+          </h2>
+          <div class="flex items-center gap-2 shrink-0">
+            <button type="button" onclick="moveTestimonials(-1)" aria-label="Testimonio anterior" class="w-9 h-9 rounded-full border border-light-outline-variant bg-light-surface text-light-primary flex items-center justify-center active:scale-95 transition-transform">
+              <span class="material-symbols-outlined text-title-md">chevron_left</span>
+            </button>
+            <button type="button" onclick="moveTestimonials(1)" aria-label="Siguiente testimonio" class="w-9 h-9 rounded-full border border-light-outline-variant bg-light-surface text-light-primary flex items-center justify-center active:scale-95 transition-transform">
+              <span class="material-symbols-outlined text-title-md">chevron_right</span>
+            </button>
+          </div>
+        </div>
 
-        <div class="space-y-4">
-          <div class="bg-light-surface rounded-2xl p-5 border border-light-outline-variant shadow-sm">
-            <p class="font-display italic text-body-md text-light-primary mb-3 leading-relaxed">
-              «He tenido el honor de encontrarme con Elena en un momento en que necesitaba mucha orientación y apoyo. Ha sido una de las mejores cosas que me ha pasado.»
+        <div id="testimonials-carousel" class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+          <div class="snap-start shrink-0 w-[85%] bg-light-surface rounded-2xl p-5 border border-light-outline-variant shadow-sm flex flex-col justify-between">
+            <p class="font-display italic text-body-md text-light-primary mb-4 leading-relaxed">
+              «He tenido el honor de encontrarme con Elena, en un momento de mi vida en que necesitaba mucha orientación y apoyo emocional y psicológico. Puedo decir que ha sido una de las mejores cosas que me ha pasado. Elena es una gran profesional y una excelente persona. Siempre gracias.»
             </p>
             <span class="font-mono text-[11px] text-light-outline block">-F.C.</span>
           </div>
 
-          <div class="bg-brand-beige/30 rounded-2xl p-5 border border-light-outline-variant shadow-sm">
-            <p class="font-display italic text-body-md text-light-primary mb-3 leading-relaxed">
-              «La terapia con Elena está siendo de las mejores experiencias de mi vida. Me ha acompañado en el luto sintiéndome escuchada y valorada. ¡La recomiendo 200%!»
+          <div class="snap-start shrink-0 w-[85%] bg-brand-beige/30 rounded-2xl p-5 border border-light-outline-variant shadow-sm flex flex-col justify-between">
+            <p class="font-display italic text-body-md text-light-primary mb-4 leading-relaxed">
+              «Gracias por ayudarme a encontrar el camino en una etapa de mi vida dónde me encontraba perdida, la terapia contigo fue clave para empezar a transitar en nuevo camino, con más confianza en mi.»
+            </p>
+            <span class="font-mono text-[11px] text-light-outline block">-M.C.</span>
+          </div>
+
+          <div class="snap-start shrink-0 w-[85%] bg-light-surface rounded-2xl p-5 border border-light-outline-variant shadow-sm flex flex-col justify-between">
+            <p class="font-display italic text-body-md text-light-primary mb-4 leading-relaxed">
+              «Elena ha sido mi psicóloga durante dos temporadas de mi vida y solo tengo palabras de agradecimiento para ella. Buenisima profesional, muy cercana y súper agradable hacer terapia con ella.»
+            </p>
+            <span class="font-mono text-[11px] text-light-outline block">-A.G.</span>
+          </div>
+
+          <div class="snap-start shrink-0 w-[85%] bg-light-surface-container-low rounded-2xl p-5 border border-light-outline-variant shadow-sm flex flex-col justify-between">
+            <p class="font-display italic text-body-md text-light-primary mb-4 leading-relaxed">
+              «La terapia con Elena esta siendo una de las mejores experiencias de mi vida. Me ha ayudado a tomar conciencia de muchos temas y me ha proporcionado herramientas para superar muchas cosas. Tambien me ha hecho un proceso de acompañamiento en el luto en el cual me he sentido acompañada, escuchada y valorada. Es una gran profesional con mucha empatia y profesionalidad. La recomiendo 200%!»
             </p>
             <span class="font-mono text-[11px] text-light-outline block">-I.M.</span>
           </div>
+        </div>
+
+        <div id="testimonials-dots" class="flex items-center justify-center gap-2 mt-4" aria-label="Indicadores de testimonios">
+          <button type="button" onclick="goToTestimonial(0)" aria-label="Ver testimonio 1" class="w-5 h-2 rounded-full bg-light-primary transition-all"></button>
+          <button type="button" onclick="goToTestimonial(1)" aria-label="Ver testimonio 2" class="w-2 h-2 rounded-full bg-light-outline-variant transition-all"></button>
+          <button type="button" onclick="goToTestimonial(2)" aria-label="Ver testimonio 3" class="w-2 h-2 rounded-full bg-light-outline-variant transition-all"></button>
+          <button type="button" onclick="goToTestimonial(3)" aria-label="Ver testimonio 4" class="w-2 h-2 rounded-full bg-light-outline-variant transition-all"></button>
         </div>
       </section>
 
@@ -709,6 +786,54 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
         if (isLiveSite || (img.complete && img.naturalWidth === 0)) restore();
         else img.addEventListener('error', restore);
       });
+    })();
+    (function () {
+      var carousel = document.getElementById('testimonials-carousel');
+      var dotsWrap = document.getElementById('testimonials-dots');
+      if (!carousel || !dotsWrap) return;
+      var cards = Array.prototype.slice.call(carousel.children);
+      var dots = Array.prototype.slice.call(dotsWrap.children);
+      var currentIdx = 0;
+
+      function updateDots(idx) {
+        currentIdx = idx;
+        dots.forEach(function (dot, i) {
+          if (i === idx) {
+            dot.classList.remove('w-2', 'bg-light-outline-variant');
+            dot.classList.add('w-5', 'bg-light-primary');
+          } else {
+            dot.classList.remove('w-5', 'bg-light-primary');
+            dot.classList.add('w-2', 'bg-light-outline-variant');
+          }
+        });
+      }
+
+      window.goToTestimonial = function (idx) {
+        var clamped = Math.max(0, Math.min(cards.length - 1, idx));
+        var card = cards[clamped];
+        if (!card) return;
+        carousel.scrollTo({ left: card.offsetLeft - carousel.offsetLeft, behavior: 'smooth' });
+        updateDots(clamped);
+      };
+
+      window.moveTestimonials = function (delta) {
+        var next = (currentIdx + delta + cards.length) % cards.length;
+        window.goToTestimonial(next);
+      };
+
+      carousel.addEventListener('scroll', function () {
+        var scrollLeft = carousel.scrollLeft;
+        var closest = 0;
+        var minDist = Infinity;
+        cards.forEach(function (card, i) {
+          var dist = Math.abs((card.offsetLeft - carousel.offsetLeft) - scrollLeft);
+          if (dist < minDist) {
+            minDist = dist;
+            closest = i;
+          }
+        });
+        if (closest !== currentIdx) updateDots(closest);
+      }, { passive: true });
     })();
   </script>
 
