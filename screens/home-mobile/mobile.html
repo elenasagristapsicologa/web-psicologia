@@ -693,17 +693,20 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') closeLegalModal();
     });
-    document.querySelectorAll('img[data-stitch-original-src]').forEach(function (img) {
-      function restore() {
-        var orig = img.getAttribute('data-stitch-original-src') || '';
-        var path = orig.indexOf('===') !== -1 ? orig.split('===')[1] : orig;
-        if (path && img.getAttribute('src') !== path) {
-          img.setAttribute('src', path);
+    (function () {
+      var isLiveSite = window.location.protocol !== 'about:';
+      document.querySelectorAll('img[data-stitch-original-src]').forEach(function (img) {
+        function restore() {
+          var orig = img.getAttribute('data-stitch-original-src') || '';
+          var path = orig.indexOf('===') !== -1 ? orig.split('===')[1] : orig;
+          if (path && img.getAttribute('src') !== path) {
+            img.setAttribute('src', path);
+          }
         }
-      }
-      if (img.complete && img.naturalWidth === 0) restore();
-      else img.addEventListener('error', restore);
-    });
+        if (isLiveSite || (img.complete && img.naturalWidth === 0)) restore();
+        else img.addEventListener('error', restore);
+      });
+    })();
   </script>
 
 
